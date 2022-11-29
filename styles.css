@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:300,400,500,600,700,800,900&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'poppins',sans-serif;
+}
+body{
+    background: #0a2a43;
+    min-height: 1500px;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section::before{
+    content:'bienvenue';
+    color:white;
+    text-align: center;
+    padding:40px;
+    text-transform: uppercase;
+    position:absolute ;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    background:#0a2a43;
+    z-index: 10000;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+section::after{
+    content:'';
+    position:absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    mix-blend-mode: color;
+    background: 
+  radial-gradient(ellipse at center, 
+  transparent 10%, rgb(51, 4, 62));
+}
+section img{position: absolute;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+pointer-events: none;}
+
+#text{
+position:relative;
+color:#fff;
+font-size: 10em;
+z-index: 1;
+}
+
+#road{z-index: 2;}
